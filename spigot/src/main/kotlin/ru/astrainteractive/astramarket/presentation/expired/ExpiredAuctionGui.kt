@@ -50,7 +50,7 @@ class ExpiredAuctionGui(
                     val ownerUuid = UUID.fromString(auctionItem.minecraftUuid)
                     val ownerName = Bukkit.getOfflinePlayer(ownerUuid).name ?: "[ДАННЫЕ УДАЛЕНЫ]"
                     listOf(
-                        translation.auction.rightButton.let(kyoriComponentSerializer::toComponent),
+                        kyoriComponentSerializer.toComponent(" "),
                         translation.auction.auctionBy.replace(
                             "%player_owner%",
                             ownerName
@@ -63,6 +63,9 @@ class ExpiredAuctionGui(
                             "%price%",
                             auctionItem.price.toString()
                         ).let(kyoriComponentSerializer::toComponent),
+                        kyoriComponentSerializer.toComponent(" "),
+                        translation.auction.rightButton.let(kyoriComponentSerializer::toComponent),
+                        kyoriComponentSerializer.toComponent(" "),
                     ).run(::lore)
                 }
                 .setOnClickListener { onAuctionItemClicked(index, it.click) }

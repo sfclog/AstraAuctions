@@ -42,10 +42,13 @@ class AuctionGui(
                 .setIndex(i)
                 .setItemStack(serializer.fromByteArray<ItemStack>(auctionItem.item))
                 .editMeta {
+                    val additionalComponents = listOf(
+                        translation.auction.leftButton,
+                        translation.auction.rightButton,
+                        translation.auction.middleClick
+                    ).map(kyoriComponentSerializer::toComponent)
                     listOf(
-                        translation.auction.leftButton.let(kyoriComponentSerializer::toComponent),
-                        translation.auction.middleClick.let(kyoriComponentSerializer::toComponent),
-                        translation.auction.rightButton.let(kyoriComponentSerializer::toComponent),
+                        kyoriComponentSerializer.toComponent(" "),
                         translation.auction.auctionBy.replace(
                             "%player_owner%",
                             Bukkit.getOfflinePlayer(UUID.fromString(auctionItem.minecraftUuid)).name ?: "NULL"
@@ -58,6 +61,9 @@ class AuctionGui(
                             "%price%",
                             auctionItem.price.toString()
                         ).let(kyoriComponentSerializer::toComponent),
+                        kyoriComponentSerializer.toComponent(" "),
+                        *additionalComponents.toTypedArray(),
+                        kyoriComponentSerializer.toComponent(" ")
                     ).run(::lore)
                 }
                 .setOnClickListener { onAuctionItemClicked(index, it.click) }

@@ -8,31 +8,37 @@ menu:
   next: "&#18dbd1Tiếp Theo"
   sort: "&#18dbd1Sắp Xếp"
 auction:
-  wrongItemInHand: "&#f55442Bạn không thể bán vật phẩm trên tay vi không phù hợp"
-  wrongPrice: "&#f55442Giá vật phẩm không hợp lệ"
-  auctionAdded: "&#18dbd1Vật phẩm này đã được thêm vào chợ đen"
-  inventoryFull: "&#f55442Túi đồ của bạn đã đầy"
-  ownerCantBeBuyer: "&#f55442Bạn không thể mua đồ của chính bạn"
-  failedToPay: "&#f55442Không thể thanh toán tiền"
-  notifyUserBuy: "&#18dbd1Bạn đã mua vật phẩm &#dbaa18%item%&#18dbd1 từ người chơi &#dbaa18%player_owner%&#18dbd1\
-    \ với giá &#dbaa18%price%"
-  notifyOwnerUserBuy: "&#18dbd1Người chơi &#dbaa18%player%&#18dbd1 đã mua vật phẩm &#dbaa18%item%&#18dbd1\
-    \ của bạn với giá &#dbaa18%price%"
-  notEnoughMoney: "&#f55442Bạn không có đủ tiền"
-  broadcast: "&#18dbd1Người chơi &#d6a213%player% &#18dbd1vừa bán một vật phẩm mới lên /ah"
+  wrongItemInHand: "&8[&#1382d6Chợ Đen&8] &#f55442Bạn không thể bán vật phẩm trên\
+    \ tay vi không phù hợp"
+  wrongPrice: "&8[&#1382d6Chợ Đen&8] &#f55442Giá vật phẩm không hợp lệ"
+  auctionAdded: "&8[&#1382d6Chợ Đen&8] &#18dbd1Vật phẩm này đã được thêm vào chợ đ\
+    en"
+  inventoryFull: "&8[&#1382d6Chợ Đen&8] &#f55442Túi đồ của bạn đã đầy"
+  ownerCantBeBuyer: "&8[&#1382d6Chợ Đen&8] &#f55442Bạn không thể mua đồ của chính\
+    \ bạn"
+  failedToPay: "&8[&#1382d6Chợ Đen&8] &#f55442Không thể thanh toán tiền"
+  notifyUserBuy: "&8[&#1382d6Chợ Đen&8] &#18dbd1Bạn đã mua vật phẩm &#dbaa18%item%&#18dbd1\
+    \ từ người chơi &#dbaa18%player_owner%&#18dbd1 với giá &a%price%$"
+  notifyOwnerUserBuy: "&8[&#1382d6Chợ Đen&8] &#18dbd1Người chơi &#dbaa18%player%&#18dbd1\
+    \ đã mua vật phẩm &#dbaa18%item%&#18dbd1 của bạn với giá &a%price%$"
+  notEnoughMoney: "&8[&#1382d6Chợ Đen&8] &#f55442Bạn không có đủ tiền"
+  broadcast: "&8[&#1382d6Chợ Đen&8] &#18dbd1Người chơi &#d6a213%player% &#18dbd1vừ\
+    a bán một vật phẩm mới lên /ah"
   tabCompleterPrice: "GIÁ"
   tabCompleterAmount: "SỐ LƯỢNG"
   auctionHasBeenExpired: "&#d6a213Bạn đã quá giới hạn vật phẩm đăng bán!"
-  leftButton: "&#d6a213Chuột trái &#18dbd1- Mua món đồ này"
-  rightButton: "&#d6a213Chuột phải &#18dbd1- Gỡ bỏ món đồ này"
-  middleClick: "&#d6a213Nhấn Chuột Giữa &#18dbd1- Đưa vật phẩm vào mục hết hạn"
-  notAuctionOwner: "&#f55442Bạn không phải là chủ sở hữu vật phẩm này"
-  auctionDeleted: "&#f55442Vật phẩ, đã bị xóa"
-  notifyAuctionExpired: "&#f55442Vật phẩm của bạn &#item% với giá %price% vừa hết hạn"
-  maxAuctions: "&#f55442Bạn đã đạt đến số lượng đấu giá tối đa"
-  auctionBy: "&7Người Bán: &#d6a213%player_owner%"
-  auctionCreatedAgo: "&7Thời Gian: &#d6a213%time%"
-  auctionPrice: "&7Giá: &#d6a213%price%"
+  leftButton: " &fChuột Trái &#18dbd1Mua món đồ này"
+  rightButton: " &fChuột Phải &#18dbd1Gỡ bỏ món đồ này"
+  middleClick: " &fShift + Chuột Trái &#18dbd1Đánh dấu là hết hạn"
+  notAuctionOwner: "&8[&#1382d6Chợ Đen&8] &#f55442Bạn không phải là chủ sở hữu vật phẩm này"
+  auctionDeleted: "&8[&#1382d6Chợ Đen&8] &#f55442Vật phẩm, đã bị xóa"
+  notifyAuctionExpired: "&8[&#1382d6Chợ Đen&8] &#f55442Vật phẩm của bạn %item% &#f55442vớ\
+    i giá &a%price% &#f55442vừa hết hạn"
+  maxAuctions: "&8[&#1382d6Chợ Đen&8] &#f55442Bạn đã đạt đến số lượng đấu giá tối\
+    \ đa"
+  auctionBy: " &fNgười Bán: &e%player_owner%"
+  auctionCreatedAgo: " &fThời Gian: &7%time%"
+  auctionPrice: " &fGiá: &a%price%$"
   sortMaterialDesc: "&#FFFFFFTheo Loại &#d6a213&l↑"
   sortMaterialAsc: "&#FFFFFFTheo Loại &#d6a213&l↓"
   sortDateDesc: "&#FFFFFFTheo Ngày &#d6a213&l↑"
@@ -46,9 +52,10 @@ auction:
 general:
   reloadStarted: "&#dbbb18Đang khởi động lại plugin"
   reloadSuccess: "&#42f596Khởi động lại thành công"
-  noPermissions: "&#f55442Bạn không có quyền"
-  onlyForPlayers: "&#f55442Chỉ có thể được sử dụng bởi người chơi"
-  wrongArgs: "&#f55442Lệnh bị sai"
-  dbError: "&#f55442Lỗi cơ sở dữ liệu"
-  unexpectedError: "&#f55442Đã có lỗi gì đó xảy ra"
+  noPermissions: "&8[&#1382d6Chợ Đen&8] &#f55442Bạn không có quyền"
+  onlyForPlayers: "&8[&#1382d6Chợ Đen&8] &#f55442Chỉ có thể được sử dụng bởi ngườ\
+    i chơi"
+  wrongArgs: "&8[&#1382d6Chợ Đen&8] &#f55442Lệnh bị sai"
+  dbError: "&8[&#1382d6Chợ Đen&8] &#f55442Lỗi cơ sở dữ liệu"
+  unexpectedError: "&8[&#1382d6Chợ Đen&8] &#f55442Đã có lỗi gì đó xảy ra"
   timeAgoFormat: "%days%ngày %hours%giờ %minutes%phút trước"

@@ -10,7 +10,7 @@ object ConnectionExt {
     fun PluginConfig.Connection.toDBConnection(): Pair<DBConnection, DBSyntax> {
         val mysql = this.mysql
         val sqlite = this.sqlite
-        val sqliteConnection = DBConnection.SQLite("dbv2_auction.db") to DBSyntax.SQLite
+        val sqliteConnection = DBConnection.SQLite("plugins/AstraMarket/auction.db") to DBSyntax.SQLite
         if (sqlite || mysql == null) return sqliteConnection
         return DBConnection.MySQL(
             database = mysql.database,

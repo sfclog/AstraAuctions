@@ -196,11 +196,10 @@ abstract class AbstractAuctionGui(
 
     open fun onAuctionItemClicked(i: Int, clickType: ClickType) {
         val sharedClickType = when (clickType) {
-            ClickType.LEFT, ClickType.SHIFT_LEFT -> AuctionComponent.ClickType.LEFT
+            ClickType.LEFT -> AuctionComponent.ClickType.LEFT
             ClickType.RIGHT,
             ClickType.SHIFT_RIGHT -> AuctionComponent.ClickType.RIGHT
-
-            ClickType.MIDDLE -> AuctionComponent.ClickType.MIDDLE
+            ClickType.SHIFT_LEFT -> AuctionComponent.ClickType.MIDDLE
             else -> return
         }
         auctionComponent.onAuctionItemClicked(i, sharedClickType)
