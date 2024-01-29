@@ -34,7 +34,6 @@ class AuctionCommandParser : CommandParser<AuctionCommand.Result> {
                 AuctionCommand.Result.OpenExpired(player)
             }
 
-            // Open and else
             else -> {
                 val player = sender as? Player
                 player ?: return AuctionCommand.Result.NotPlayer

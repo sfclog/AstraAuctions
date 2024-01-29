@@ -14,11 +14,11 @@ depend: [Vault]
 libraries:
   - org.bstats:bstats-bukkit:3.0.0
 commands:
-  amarketreload:
+  ahreload:
     description: Reload plugin
     permission: astra_market.reload
     usage: /<command>
-  amarket:
+  ah:
     description: Open or create auction
     permission-message: You do not have permission!
     usage: |

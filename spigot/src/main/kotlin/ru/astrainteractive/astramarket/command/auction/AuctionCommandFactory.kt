@@ -11,7 +11,7 @@ class AuctionCommandFactory(
     private inner class AuctionCommandImpl :
         AuctionCommand,
         Command<AuctionCommand.Result, AuctionCommand.Result> by DefaultCommandFactory.create(
-            alias = "amarket",
+            alias = "ah",
             commandParser = AuctionCommandParser(),
             commandExecutor = AuctionCommandExecutor(dependencies),
             resultHandler = AuctionCommandResultHandler(dependencies),
